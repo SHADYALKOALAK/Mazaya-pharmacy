@@ -4,7 +4,7 @@ const LanguageContext = createContext()
 
 export function LanguageProvider({ children }) {
   const [lang, setLang] = useState(() => {
-    return localStorage.getItem('mazaya-lang') || 'en'
+    return localStorage.getItem('mazaya-lang') || 'ar'
   })
 
   useEffect(() => {
