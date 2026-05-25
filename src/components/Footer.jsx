@@ -3,15 +3,16 @@ import { useInView } from 'react-intersection-observer'
 import {
   FaFacebook,
   FaInstagram,
-  FaTwitter,
   FaMapMarkerAlt,
   FaPhone,
   FaEnvelope,
-  FaWhatsapp
+  FaWhatsapp,
+  FaTiktok
 } from 'react-icons/fa'
 
 import { useLanguage } from '../hooks/useLanguage'
 import { translations } from '../i18n'
+import logo from '../assets/logo.jpeg'
 
 const navKeys = ['home', 'about', 'services', 'whyUs', 'testimonials', 'contact']
 
@@ -22,8 +23,8 @@ const navLabels = {
 
 const socialLinks = [
   { Icon: FaFacebook, url: 'https://facebook.com' },
-  { Icon: FaInstagram, url: 'https://instagram.com' },
-  { Icon: FaTwitter, url: 'https://twitter.com' },
+  { Icon: FaInstagram, url: 'https://www.instagram.com/mazayapharmacy?igsh=NzZtNnpidTVmanBq' },
+  { Icon: FaTiktok, url: 'https://www.tiktok.com/@mazaya.pharmacy?_r=1&_t=ZS-96ez1Kxs8q9' },
 ]
 
 export default function Footer() {
@@ -45,19 +46,21 @@ export default function Footer() {
           {/* LOGO + DESCRIPTION */}
           <div>
             <div className="flex items-center gap-2.5 mb-3">
-              <div className="w-10 h-10 rounded-xl gradient-green flex items-center justify-center text-white font-bold shadow-sm">
-                M
-              </div>
+              <img src={logo} alt="Mazaya Pharmacy" className="w-10 h-10 rounded-xl object-cover shadow-sm" />
               <div>
                 <span className="font-bold text-gray-900 text-lg">Mazaya</span>
                 <span className="text-xs text-primary block">Pharmacy</span>
               </div>
             </div>
 
-            <p className={`text-sm text-gray-500 leading-relaxed max-w-xs ${
+            {/* DESCRIPTION (BILINGUAL) */}
+            <p className={`text-base font-medium leading-relaxed max-w-xs text-gray-600 ${
               lang === 'ar' ? 'font-arabic' : ''
             }`}>
-              {t.tagline}
+              {lang === 'ar'
+                ? 'رعاية صحية عصرية تثق بها. نقدم خدمات صيدلانية متكاملة تهتم بصحتك وراحتك في كل وقت.'
+                : 'Modern healthcare you can trust. We provide complete pharmacy services focused on your health, comfort, and everyday wellness.'
+              }
             </p>
 
             {/* SOCIAL */}

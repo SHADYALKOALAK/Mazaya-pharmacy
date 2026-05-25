@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { HiMenu, HiX } from 'react-icons/hi'
 import { useLanguage } from '../hooks/useLanguage'
 import { translations } from '../i18n'
+import logo from '../assets/logo.jpeg'
 
 const links = (t) => [
   { key: 'home', href: '#home' },
@@ -46,9 +47,7 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-16 md:h-20">
           <a href="#home" onClick={(e) => { e.preventDefault(); scrollTo('home') }} className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl gradient-green flex items-center justify-center text-white font-bold text-sm md:text-base shadow-sm group-hover:shadow-md transition-shadow">
-              M
-            </div>
+            <img src={logo} alt="Mazaya Pharmacy" className="w-9 h-9 md:w-10 md:h-10 rounded-xl object-cover shadow-sm" />
             <span className={`text-lg md:text-xl font-bold tracking-tight ${lang === 'ar' ? 'font-arabic' : ''}`}>
               <span className="text-primary">Mazaya</span>
               <span className="text-gray-700"> Pharmacy</span>
