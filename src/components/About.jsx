@@ -30,7 +30,7 @@ export default function About() {
       id="about"
       ref={ref}
       dir={isAr ? "rtl" : "ltr"}
-      className="relative py-28 bg-gradient-to-b from-white via-[#fbfdfc] to-white overflow-hidden"
+      className="relative py-28 bg-gradient-to-b from-white via-[#fbfdfc] to-white overflow-hidden scroll-mt-24"
     >
       {/* decorative blur */}
       <div className="absolute top-[-80px] left-[-80px] w-72 h-72 bg-[#17A36B]/10 rounded-full blur-3xl" />

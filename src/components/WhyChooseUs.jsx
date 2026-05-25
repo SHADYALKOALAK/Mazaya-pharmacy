@@ -21,7 +21,7 @@ export default function WhyChooseUs() {
     <section
       id="why-us"
       ref={ref}
-      className="relative py-28 bg-gradient-to-b from-white via-[#f7fcfa] to-white overflow-hidden"
+      className="relative py-28 bg-gradient-to-b from-white via-[#f7fcfa] to-white overflow-hidden scroll-mt-24"
     >
       {/* background glow */}
       <div className="absolute top-[-120px] left-[-120px] w-96 h-96 bg-[#17A36B]/10 blur-3xl rounded-full" />

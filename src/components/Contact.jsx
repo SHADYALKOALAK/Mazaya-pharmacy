@@ -45,7 +45,7 @@ export default function Contact() {
     <section
       id="contact"
       ref={ref}
-      className="relative py-28 bg-gradient-to-b from-white via-[#f7fcfa] to-white overflow-hidden"
+      className="relative py-28 bg-gradient-to-b from-white via-[#f7fcfa] to-white overflow-hidden scroll-mt-24"
     >
       {/* glow background */}
       <div className="absolute top-[-100px] left-[-100px] w-80 h-80 bg-[#17A36B]/10 blur-3xl rounded-full" />

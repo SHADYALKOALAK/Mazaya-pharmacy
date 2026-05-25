@@ -49,7 +49,7 @@ export default function Hero() {
     <section
       id="home"
       onMouseMove={handleMouseMove}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-white via-[#F8FDFB] to-white"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-white via-[#F8FDFB] to-white scroll-mt-24"
     >
 
       {/* 🌊 BACKGROUND (same brand colors) */}

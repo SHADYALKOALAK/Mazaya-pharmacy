@@ -12,7 +12,7 @@ export default function Services() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 })
 
   return (
-    <section id="services" className="section-padding bg-[#F8FDFB]" ref={ref}>
+    <section id="services" className="section-padding bg-[#F8FDFB] scroll-mt-24" ref={ref}>
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

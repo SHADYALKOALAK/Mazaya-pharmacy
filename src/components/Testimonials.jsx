@@ -23,7 +23,7 @@ export default function Testimonials() {
   }, [inView, next])
 
   return (
-    <section id="testimonials" className="section-padding bg-[#F8FDFB]" ref={ref}>
+    <section id="testimonials" className="section-padding bg-[#F8FDFB] scroll-mt-24" ref={ref}>
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
